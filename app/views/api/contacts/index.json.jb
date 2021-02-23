@@ -1,15 +1,25 @@
-i = 0 
-
-json = []
-while i < @contacts.length
-  json << {
-    id: @contacts[i].id,
-    first_name: @contacts[i].first_name,
-    last_name: @contacts[i].last_name,
-    email: @contacts[i].email,
+@contacts.each do |contact|
+  {
+    id: contact.id,
+    first_name: contact.first_name,
+    last_name: contact.last_name,
+    email: contact.email,
   }
-  i += 1
 end
 
 
-json
+# i = 0 
+
+# json = []
+# while i < @contacts.length
+#   json << {
+#     id: @contacts[i].id,
+#     first_name: @contacts[i].first_name,
+#     last_name: @contacts[i].last_name,
+#     email: @contacts[i].email,
+#   }
+#   i += 1
+# end
+
+
+# json
