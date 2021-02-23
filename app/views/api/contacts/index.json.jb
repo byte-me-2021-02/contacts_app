@@ -1,0 +1,15 @@
+i = 0 
+
+json = []
+while i < @contacts.length
+  json << {
+    id: @contacts[i].id,
+    first_name: @contacts[i].first_name,
+    last_name: @contacts[i].last_name,
+    email: @contacts[i].email,
+  }
+  i += 1
+end
+
+
+json
