@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+# rails console, but you get to use it in VS code
+
+100.times do
+  contact = Contact.new(first_name: "bob", last_name: "bobertson", email: "bob@bob.com", phone_number: "4567890")
+
+  contact.save
+
+end
+
